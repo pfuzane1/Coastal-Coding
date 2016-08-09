@@ -67,13 +67,8 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <h1 class="block-title m-b-sm">Be the first to hear about the launch of Coastal Coding.</h1>
-          <p class="lead m-b-md text-muted">The curriculum, course load, projects, quizes, lectures and reading are finalized. Sign up to get details on the full course expectations, example porfolios, professor and assistant bios, classroom details, requirements, and all other details soon.</p>
-          <p class="lead m-b-md">Only $9,997 to change your life. Classes start in September.</p>
-          <a class="btn btn-primary btn-lg" href="#pricing">Learn more to sign up</a>
-          
-<p>Thank you</p>
-<p>Your email address is: <?php echo $_POST["email"]; ?></p>
+          <h1 class="block-title m-b-sm">You'll hear from us soon.</h1>
+          <p class="lead m-b-md text-muted">We'll let you know when you can check out the details on the full course expectations, example porfolios, professor and assistant bios, classroom details, and requirements.</p>
           </form>
         </div>
       </div>
@@ -84,6 +79,15 @@
 
 </div>
 
+<?php
+$to = "trentellingsen+cc@gmail.com";
+$subject = "Student Interest";
+$txt = $_POST["email"] + " is interested in Coastal Coding!";
+$headers = "From: contact@coastalcoding.com" . "\r\n" .
+"CC: test@example.com";
+
+mail($to,$subject,$txt,$headers);
+?>
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/toolkit.js"></script>
