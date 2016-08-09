@@ -89,14 +89,17 @@ $headers = "From: " . $_POST["email"] . "\r\n" .
 mail($to,$subject,$txt,$headers);
 ?>-->
 <?php
-// the message
-$msg = "First line of text\nSecond line of text";
+require 'vendor/autoload.php';
+$sendgrid = new SendGrid('trentellingsen', 'cc4GOD!!');
 
-// use wordwrap() if lines are longer than 70 characters
-$msg = wordwrap($msg,70);
+$email = new SendGrid\Email();
+$email->addTo('trentellingsen@gmail.com')
+    ->setFrom('me@bar.com')
+    ->setSubject('Subject goes here')
+    ->setText('Hello World!')
+    ->setHtml('<strong>Hello World!</strong>');
 
-// send email
-mail("trentellingen@gmail.com","My subject",$msg);
+$sendgrid->send($email);
 ?>
 
     <script src="assets/js/jquery.min.js"></script>
