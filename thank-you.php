@@ -82,8 +82,8 @@
 <?php
 $to = "trentellingsen+cc@gmail.com";
 $subject = "Student Interest";
-$txt = $_POST["email"] + " is interested in Coastal Coding!";
-$headers = "From: contact@coastalcoding.com" . "\r\n" .
+$txt = $_POST["email"] . " is interested in Coastal Coding!";
+$headers = "From: ". $_POST["email"] . "\r\n" .
 "CC: test@example.com";
 
 mail($to,$subject,$txt,$headers);
