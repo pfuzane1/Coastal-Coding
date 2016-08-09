@@ -68,7 +68,7 @@
       <div class="row">
         <div class="col-sm-12">
           <h1 class="block-title m-b-sm">You'll hear from us soon.</h1>
-          <p class="lead m-b-md text-muted">We'll let you know when you can check out the details on the full course expectations, example porfolios, professor and assistant bios, classroom details, and requirements.</p>
+          <p class="lead m-b-md text-muted">2We'll let you know when you can check out the details on the full course expectations, example porfolios, professor and assistant bios, classroom details, and requirements.</p>
           </form>
         </div>
       </div>
@@ -79,14 +79,24 @@
 
 </div>
 
-<?php
+<!--<?php
 $to = "trentellingsen+cc@gmail.com";
 $subject = "Student Interest";
 $txt = $_POST["email"] . " is interested in Coastal Coding!";
-$headers = "From: ". $_POST["email"] . "\r\n" .
+$headers = "From: " . $_POST["email"] . "\r\n" .
 "CC: test@example.com";
 
 mail($to,$subject,$txt,$headers);
+?>-->
+<?php
+// the message
+$msg = "First line of text\nSecond line of text";
+
+// use wordwrap() if lines are longer than 70 characters
+$msg = wordwrap($msg,70);
+
+// send email
+mail("trentellingen@gmail.com","My subject",$msg);
 ?>
 
     <script src="assets/js/jquery.min.js"></script>
