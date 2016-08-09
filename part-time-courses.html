@@ -67,9 +67,10 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <h1 class="block-title m-b-sm">You'll hear from us soon.</h1>
-          <p class="lead m-b-md text-muted">We'll let you know when you can check out the details on the full course expectations, example porfolios, professor and assistant bios, classroom details, and requirements.</p>
-          </form>
+          <h1 class="block-title m-b-sm">Go from <i>0 experience</i> in code to a <i>ready for hire</i> software engineer in 36 weeks while keeping your day job.</h1>
+          <p class="lead m-b-md text-muted">Change your life and invest in learning now to start a career with an average salary of $87,050 in Ventura County (Source: Glassdoor). Coastal Coding is located in Oxnard, California. Courses are two, 4 hour, night time sessions per week taught by 20 years experienced professor Patience Fuzane.</p>
+          <p class="lead m-b-md">Only $4,297/quarter to change your life. Classes start in September.</p>
+          <a class="btn btn-primary btn-lg" href="signup.html">Learn more to sign up</a>
         </div>
       </div>
     </div>
@@ -78,22 +79,11 @@
 
 
 </div>
-<?php
-require 'vendor/autoload.php';
-$sendgrid = new SendGrid('trentellingsen', 'cc4GOD!!');
 
-$email = new SendGrid\Email();
-$email->addTo('trentellingsen@gmail.com')
-    ->setFrom('me@bar.com')
-    ->setSubject('Subject goes here')
-    ->setText('Hello World!')
-    ->setHtml('<strong>Hello World!</strong>');
-
-$sendgrid->send($email);
-?>
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/toolkit.js"></script>
     <script src="assets/js/application.js"></script>
   </body>
 </html>
+
