@@ -20,5 +20,6 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 
-exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
+gems: ['kramdown']
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
 
