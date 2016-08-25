@@ -12,8 +12,6 @@ GEM
       mercenary (~> 0.3.3)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-auto-image (1.1.2)
-      jekyll
     jekyll-sass-converter (1.4.0)
       sass (~> 3.4)
     jekyll-sitemap (0.10.0)
@@ -44,9 +42,14 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-auto-image
   jekyll-sitemap
   kramdown
   puma
   rack-jekyll
   rake
+
+RUBY VERSION
+   ruby 2.1.0p0
+
+BUNDLED WITH
+   1.12.5
