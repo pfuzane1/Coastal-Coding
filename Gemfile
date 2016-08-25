@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.1.2'
 gem 'jekyll'
-gem 'jekyll-auto-image'
 gem 'kramdown'
 gem 'rack-jekyll'
 gem 'rake'
