@@ -3454,7 +3454,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand:focus {
   text-decoration: none;
 }
-.navbar-brand > img {
+.navbar-brand > img { url("../img/LogoPalmSmall-4b.png");
   display: block;
 }
 @media (min-width: 768px) {
