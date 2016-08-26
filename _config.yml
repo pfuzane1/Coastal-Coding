@@ -6,16 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Coastal Coding
+email: pfuzane@coastalcoding.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  We inspire and motivate students to go beyond their expectations for what they can do in Software Development and their careers. We do this through top quality software development educators who teach current and modern material and give 1:1 coaching with students on career opportunities. Our students experience life change through this program and are prepared for any opportunity in Software Development when they graduate.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://coastalcoding.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown

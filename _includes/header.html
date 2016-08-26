@@ -1,27 +1,116 @@
-<header class="site-header">
 
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-
-      <div class="trigger">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </nav>
-
-  </div>
-
-</header>
+    <div class="loader-backdrop">           <!-- Loader -->
+        <div class="loader">
+            <div class="ball-1"></div>
+            <div class="ball-2"></div>
+        </div>
+    </div>
+<header>            <!-- Header = Topbar + Navigation Bar -->
+        <div class="topbar">            <!-- Dark Blue Topbar -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="tel:1800-234-2845" class="call-us"><i class="fa fa-phone"></i> 1800-234-2845</a>          <!-- Change Phone Number Here -->
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="dropdown">          <!-- Language Dropdown -->
+                            <button class="btn btn-xs" type="button" id="select-lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-globe"></i> English
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="select-lang">
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">Spanish</a></li>
+                                <li><a href="#">Vietnamese</a></li>
+                            </ul>
+                        </div>
+                        <form class="search form-inline">           <!-- Search Form -->
+                            <input type="text" class="form-control" placeholder="Start typing...">
+                            <button class="btn-search" type="submit"><i class="fa fa-search fa-fw"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar navbar-default">         <!-- Navigation Bar -->
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navigation" aria-expanded="false">
+                        <span class="sr-only">Toggle Menu</span>
+                        <span>Menu</span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a> <!-- Replace with your Logo -->
+                </div>
+                
+                <div class="collapse navbar-collapse" id="main-navigation">         <!-- Main Menu -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a>
+                            <ul class="sub-menu">									<!-- Sub Menu -->
+                                <li><a href="brief-history.html">Brief History</a></li>
+                                <li><a href=about-educomp.html>About EduComp</a></li>
+                                <li><a href="admission-process.html">Admission Process</a></li>
+                                <li><a href="albums.html">Albums</a></li>
+                                <li><a href="album-single.html">Album Single</a></li>
+                                <li><a href="testimonials.html">Testimonials</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="code-of-conduct.html">Code of Conduct</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Pages</a>
+                            <ul class="sub-menu">																<!-- Sub Menu -->
+                                <li><a href="#"> Courses <i class="fa fa-angle-right pull-right"></i></a>
+                                    <ul class="sub-menu">														<!-- Sub Sub Menu -->
+                                        <li><a href="course-grid.html">Course Grid</a></li>
+                                        <li><a href="course-list.html">Course List</a></li>
+                                        <li><a href="course-detail.html">Course Detail</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Teachers <i class="fa fa-angle-right pull-right"></i></a>
+                                    <ul class="sub-menu">														<!-- Sub Sub Menu -->
+                                        <li><a href="teachers.html">Our Teachers</a></li>
+                                        <li><a href="teacher-profile.html">Teacher Profile</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Events  <i class="fa fa-angle-right pull-right"></i></a>
+                                    <ul class="sub-menu">														<!-- Sub Sub Menu -->
+                                        <li><a href="upcoming-events.html">Upcoming Events</a></li>
+                                        <li><a href="event-details.html">Event Details</a></li>
+                                    </ul>                                
+                                </li>
+                                <li><a href="coming-soon.html">Coming Soon</a></li>
+                                <li><a href="not-found.html">404</a></li>                                
+                            </ul>
+                        </li>                        
+                        <li><a href="#">Elements</a>
+                            <ul class="sub-menu">																<!-- Sub Menu -->
+                                <li><a href="video.html">Video</a></li>
+                                <li><a href="modals.html">Modals</a></li>
+                                <li><a href="call-to-action.html">Call to action</a></li>
+                                <li><a href="icon-boxes.html">Icon boxes</a></li>
+                                <li><a href="accordion.html">Accordion</a></li>
+                                <li><a href="tabs.html">Tabs</a></li>
+                                <li><a href="tables.html">Tables</a></li>
+                                <li><a href="blockquotes.html">Blockquotes</a></li>
+                                <li><a href="progress-bars.html">Progress Bars</a></li>
+                                <li><a href="lists.html">Lists</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Blog</a>
+                            <ul class="sub-menu">																<!-- Sub Menu -->
+                                <li><a href="blog-list-right-sidebar.html">Blog Right Sidebar</a></li>
+                                <li><a href="blog-list-left-sidebar.html">Blog Left Sidebar</a></li>
+                                <li><a href="blog-single.html">Blog Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact</a>
+                            <ul class="sub-menu">																<!-- Sub Menu -->
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="google-map.html">Google Map</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
