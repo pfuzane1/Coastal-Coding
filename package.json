@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "sendgrid": "2.0.0"
+  }
+}

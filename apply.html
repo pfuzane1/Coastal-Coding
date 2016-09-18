@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<style>
+        .js-reframe iframe {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        } .js-reframe {
+            position: relative;
+            width: 100%;
+            height: 1660px;
+        }
+    </style>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Admission Process</h1>
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Admission Process</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-100">
+        <iframe id="application" src="https://docs.google.com/forms/d/e/1FAIpQLSfrg2frXCZfxBMKVzVVbvoAxi9jotr2gJ5MTCXMYLg51DBWCw/viewform?embedded=true" width height frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </div>
+
+
+<script src="js/reframe.js"></script>
+<script>
+	reframe('#application');
+</script>
