@@ -1,0 +1,144 @@
+/* Make a copy before editing the styles below */
+
+div.logo {
+  margin-bottom: 20px;
+  float: none;
+}
+
+body,
+.section .activity.modtype_label.label,
+.nav-collapse .nav > li > a,
+.nav-collapse .dropdown-menu a {
+    font-weight: 300;
+}
+
+/* ----- Navigation bar ----- */
+.navbar-fixed-top .navbar-inner {
+    border-bottom: 3px solid #f98012;
+    background-image: none;
+}
+
+/* Navigation bar: default text color */
+.navbar .nav > li > a,
+.dropdown-menu > li > a,
+.nav-collapse .nav > li > a,
+.nav-collapse .dropdown-menu a,
+.usermenu .login,
+.usermenu .login a,
+.usermenu .moodle-actionmenu .toggle-display {
+    color: #666;
+    text-shadow: none;
+}
+
+/* Navigation bar: text color and background-color on hover */
+.nav-collapse .nav > li > a:hover,
+.nav-collapse .nav > li > a:focus,
+.nav-collapse .dropdown-menu a:hover,
+.nav-collapse .dropdown-menu a:focus,
+.nav-collapse .dropdown-submenu a:focus,
+.nav-collapse .dropdown-submenu a:hover,
+.nav-collapse .dropdown-submenu a:active,
+.nav-collapse .dropdown-menu > li > a:hover,
+.nav-collapse .dropdown-menu > li > a:focus,
+.navbar .nav li.dropdown.open >.dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a,
+.jsenabled .usermenu .moodle-actionmenu.show,
+.usermenu .moodle-actionmenu .toggle-display:hover,
+.jsenabled .usermenu .moodle-actionmenu.show .menu a:hover {
+    color: #01017f;
+    background-color: #E5E5E5;
+    background-image: none;
+}
+
+/* Navigation bar: text color on hover for the user menu */
+.jsenabled .usermenu .moodle-actionmenu .toggle-display:hover,
+.usermenu .login a:focus,
+.usermenu .login a:hover {
+    color: #004d99;
+}
+
+.jsenabled .usermenu .moodle-actionmenu > .menubar {
+    margin: 0;
+}
+
+#page-navbar {
+    border: 1px solid #eee;
+    border-radius: 9px;
+}
+
+/* ----- End navigation bar ----- */
+
+/* ----- Breadcrumb ----- */
+#page-navbar {
+    background-color: #fff;
+    padding-top: 10px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+}
+
+.breadcrumb {
+    background-color: transparent;
+}
+
+.breadcrumb > li {
+    text-shadow: none;
+}
+/* ----- End breadcrumb ----- */
+
+/* ----- Main content area and blocks ----- */
+#region-main {
+    font-size: 15px;
+}
+
+#region-main,
+.block {
+    border: 1px solid #eee;
+    border-radius: 9px;
+    box-shadow: none;
+}
+
+.block .header h2 {
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-shadow: none;
+}
+/* ----- End main content area and blocks ----- */
+
+/* ----- Post-it ----- */
+.tip-container {
+  margin: 20px;
+  position: relative;
+}
+
+.note {
+  color: #333;
+  position: relative;
+  padding: 10px;
+  box-shadow: 4px 6px 8px 0 rgba(0, 0, 0, 0.1)
+}
+
+.yellow {
+  background: #FFFFC6;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+
+div#inst19.block_html.block {
+   background-color: transparent !important;
+   border: none  !important;
+   shadow: none  !important;
+}
+/* ----- End post-it ----- */
